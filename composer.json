@@ -1,0 +1,32 @@
+{
+    "name": "fivepercent/converter",
+    "description": "Convert method parameters and object properties",
+    "keywords": [ "converter", "property converter", "parameter converter" ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vitaliy Zhuk",
+            "email": "zhuk2205@gmail.com"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.4",
+        "fivepercent/cache": "~1.0",
+        "fivepercent/exception": "~1.0",
+        "fivepercent/reflection": "~1.0"
+    },
+
+    "suggest": {
+        "fivepercent/money": "For convert Money instances",
+        "doctrine/orm": "For use Doctrine ORM to conversion",
+        "doctrine/annotations": "For use annotations in converts",
+        "symfony/expression-language": "For get data with used Symfony ExpressionLanguage",
+        "symfony/http-foundation": "For convert Symfony2 Request"
+    },
+
+    "autoload": {
+        "psr-4": { "FivePercent\\Component\\Converter\\": "src/" }
+    }
+}
