@@ -81,7 +81,7 @@ class ORMParameterConverter extends ORMConverter implements ParameterConverterIn
             }
         }
 
-        return $this->convertValue($metadata, $value, $parameter->isOptional());
+        return $this->convertValue($metadata, $value, false);
     }
 
     /**
